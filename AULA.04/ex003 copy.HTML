@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width, initial-scale=1.0" />
+    <title>gaming.com</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(0, 18, 66);
+        color: rgb(255, 255, 255);
+        font: normal 20pt arial;
+        text-align: center;
+        margin-top: 100px;
+      }
+    </style>
+    <script>
+      window.alert("este site é somente para maiores de 18 anos");
+      var idade = Number(window.prompt("qual a sua idade?"));
+      var maior = idade >= 18;
+      if (maior) {
+        window.alert("acesso confirmado");
+        document.write("Seja bem vindo ao nosso site!");
+      } else {
+        window.alert("acesso negado");
+        document.write(
+          "Voce não tem idade o suficiente para acessar ao nosso conteudo!"
+        );
+      }
+
+    </script>
+  </body>
+</html>

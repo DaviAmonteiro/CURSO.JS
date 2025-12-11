@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATICANDO</title>
+</head>
+<style>
+body{
+    background-color: #0d4d00;
+    color: rgb(0, 0, 78); 
+   
+}
+ div#box{
+width: 350px;
+height: 400px;
+background-color: rgb(219, 223, 0);
+margin-left: auto;
+margin-right: auto;
+border-radius: 30px;
+text-align: center;
+font: normal 18pt arial;
+
+ }
+
+ h1,p{
+text-align: center;
+font: normal 25pt arial;
+ }
+
+ input[type="text"] {
+      padding: 5px;
+      border-radius: 8px;
+      margin-left: 40px;
+      border: 1px solid rgb(0, 0, 0);
+      font-size: 12pt;
+    }
+ 
+ input[type="button"] {
+      padding: 6px 12px;
+      font-size: 12pt;
+      border-radius: 10px;
+      background-color: rgba(32, 92, 255, 0.932);
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+ 
+
+
+</style>
+<body>
+    <div id="box">
+         <h1>Identificando sua nacionalidade</h1> 
+        <p>Digite o nome do seu páis!</p> <input type="text" name="nac1" id="nac1">
+    <input type="button" value="verificar" onclick="verificar()"> <br>
+                  <p>:)</p>
+    </div>
+
+</body>
+<script>
+  box.addEventListener('mouseout', sair)
+    function verificar(){
+      var pais= window.document.getElementById('nac1').value
+      var box= window.document.getElementById('box')
+      var result= (pais.value)
+
+      if (pais== 'brasil'){
+   box.innerHTML= `voce é brasileiro!`
+   box.style.color = 'green'
+      }
+       else{
+        box.innerHTML+= `voce é estrangeiro!`
+        box.style.color= 'red'
+      }
+      
+    }
+
+
+
+
+</script>
+</html>

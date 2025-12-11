@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 5</title>
+</head>
+<style>
+    div#area{
+        background-color: rgb(252, 0, 0);
+        color: rgb(0, 0, 0);
+        font: arial 20pt;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+
+    }
+</style>
+<body>
+    <div id="area" >
+
+
+     interaja...
+
+    </div>
+    <script>
+ var area= window.document.getElementById("area")
+ area.addEventListener('click', clicar)
+ area.addEventListener('mouseenter', entrou)
+ area.addEventListener('mouseout', sair)
+
+function entrou(){
+area.innerText= "olá, tudo bem?"
+area.style.background= "yellow"
+}
+
+function sair(){
+ area.innerText= 'interaja...'
+ area.style.background= 'red'
+}
+
+function clicar() {
+    area.innerText= 'fico feliz que esteja bem!'
+    area.style.background="green"
+}
+    </script>
+</body>
+</html>

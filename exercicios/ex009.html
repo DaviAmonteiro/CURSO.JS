@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 2- contador</title>
+</head>
+<style>
+body{
+  text-align: center;
+  margin-top: 200px;
+  background-color: rgb(1, 1, 24);
+  color: white;
+}
+
+div#box1{
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+</style>
+<body>
+  <input type="button" value="contar" onclick="contar()">
+  <input type="button" value="dimunuir" onclick="tirar()">
+  <input type="button" value="zerar" onclick="zerar()">
+ 
+ <div id="box1">
+    Numeros:
+</div> 
+
+  
+
+</body>
+<script>
+let contador= 0;
+let dimunuir= contador;
+let zero= 0;
+
+
+function contar(){
+  contador++;
+var box=(window.document.getElementById('box1'));
+box.innerText=`contando: ${contador}`
+if (contador){
+  dimun
+}
+//adiciona+1 a cada clique
+}
+
+function tirar(){
+dimunuir--;
+var box=(window.document.getElementById('box1'));
+box.innerText= dimunuir;
+}
+ function zerar(){
+  var box= window.document.getElementById('box1');
+  box.innerText= zero;
+ }
+
+
+
+
+
+</script>
+</html>

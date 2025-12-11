@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubra seu peso!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>  Calculadora IMC()!</h1>
+    </header>
+
+    <section>
+      <div>
+        <div id="container1">
+            <p id="um">
+            peso:  <input type="number" name="peso" id="txtpeso" min=" 0" step="0.1 "/> 
+        </p>
+    </div>
+         
+      <div id="container2">
+        <p id="dois"> 
+            altura: <input type="number" name="altura" id="txtaltura" min=" 0" step="0.01">
+        </p>
+      </div>
+        
+     
+            <input type="button" value="verificar" id="botao" onclick="calcularIMC()" onmouseenter="entrar()" onmouseout="sair()"/>     
+
+        
+      </div>
+      <div id="res">
+        <h3>Digite seu peso e idade para ver o resultado!</h3>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
