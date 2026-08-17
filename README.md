@@ -1,2 +1,3 @@
 # CURSO.JS
-Curso de JavaScript do CursoEmVideo
+Curso de Introdução a JavaScript do CursoEmVideo.
+
